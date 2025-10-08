@@ -1,0 +1,224 @@
+.car-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+.car-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.car-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Rating */
+.rating {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Meta */
+.car-meta .row > div {
+  font-size: 0.9rem;
+  color: #444;
+}
+.reviews {
+  font-size: 0.85rem;
+  color: #6C63FF;
+  font-weight: 500;
+}
+
+/* Feature grid */
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 8px;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  font-size: 0.9rem;
+  color: #333;
+}
+.feature-icon {
+  color: #2ecc71;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* Book button */
+.book-btn {
+  background: #D128A1;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+}
+.book-btn:hover {
+  background: #b51f8d;
+}
+
+/* Popup */
+/* .overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+} */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.popup {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 767px) {
+  .popup .row > [class*="col-"] {
+    margin-bottom: 10px;
+  }
+}
+
+
+.calendar-row {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+.calendar-icon {
+  color: #6C63FF;
+  font-size: 1.2rem;
+}
+
+.calendar-text .label {
+  font-weight: 500;
+  color: #555;
+  margin-right: 6px;
+}
+
+.calendar-text .date {
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+.tour-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+.tour-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Calendar row */
+.calendar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calendar-icon {
+  color: #6C63FF;
+  font-size: 1.2rem;
+}
+.calendar-text .label {
+  font-weight: 500;
+  color: #555;
+  margin-right: 4px;
+}
+.calendar-text .date {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Highlights */
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.highlight-pill {
+  background-color: #f1f1f1;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Book Button */
+.book-btn {
+  background: #D128A1;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+}
+.book-btn:hover {
+  background: #b51f8d;
+}
+
+
+/* Shimmer loader */
+.shimmer {
+  height: 350px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e2e2e2 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+
+.split-btn-container {
+  transition: all 0.3s ease-in-out;
+}
+
+.split-btn-container button {
+  transition: all 0.3s ease;
+}

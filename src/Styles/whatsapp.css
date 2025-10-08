@@ -1,0 +1,53 @@
+/* Base (desktop & large screens): NO glow */
+.wa-button {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #25d366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.25s ease;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  writing-mode: vertical-rl; /* Make it vertical */
+  animation: none; /* <- important: no glow on large screens */
+}
+
+.wa-button:hover {
+  background: #1ebe57;
+}
+
+.wa-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Small screens: hide text, round icon button, ENABLE glow */
+@media (max-width: 768px) {
+  .wa-text { display: none; }
+
+  .wa-button {
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: none;
+    animation: glowing 0.9s infinite alternate; /* glow only on small screens */
+  }
+}
+
+/* Glow animation (green aura) */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 6px #25d366, 0 0 12px #25d366, 0 0 18px #25d366;
+  }
+  100% {
+    box-shadow: 0 0 18px #25d366, 0 0 32px #25d366, 0 0 48px #25d366;
+  }
+}

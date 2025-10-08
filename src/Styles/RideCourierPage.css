@@ -1,0 +1,58 @@
+/* .ride-courier-container {
+  background: #f9fafc;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.btn {
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+} */
+
+.ride-courier-container {
+  background-color: #f9fafc;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 12px;
+  background: #fff;
+}
+
+.vehicle-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.vehicle-card {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.vehicle-card:hover {
+  background: #dbeafe;
+}
+
+@media (max-width: 768px) {
+  .vehicle-card {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+

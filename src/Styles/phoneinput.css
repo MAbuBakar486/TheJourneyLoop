@@ -1,0 +1,110 @@
+/* phoneinput.css */
+
+/* Scope only inside login form */
+.login__form .react-tel-input {
+  width: 100% !important;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.login__form .react-tel-input .form-control {
+  width: 100% !important;
+  border-radius: 8px !important;
+  padding: 12px 12px 12px 50px !important;
+  border: 1px solid #ddd !important;
+  background: #f9f9f9 !important;
+  font-size: 0.95rem !important;
+  box-shadow: none !important;
+}
+
+.login__form .react-tel-input .flag-dropdown {
+  border: 1px solid #ddd !important;
+  border-radius: 8px 0 0 8px !important;
+  background: #fff !important;
+}
+
+/* Ensure dropdown does not break modal */
+.login__form .react-tel-input .country-list {
+  z-index: 10000 !important;
+}
+
+
+.glow-button {
+background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
+  /* background: linear-gradient(135deg, #ffffff, #f1f1f1);  */
+  color: #B22222 !important; /* Deep red text */
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.9);
+  animation: glowing 2s infinite alternate;
+}
+
+
+/* Preloader CSS for image*/
+/* .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; 
+}
+
+.preloader-logo {
+  width: 120px; /* adjust size 
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+} */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* website background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #795a5a; /* fallback text color */
+  overflow: hidden;
+}
+
+.preloader::before {
+  content: "The Journey Loop"; /* same text */
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    #0C3A2E 25%,
+    #E76F51 50%,
+    #90c205 75%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2.5s infinite linear;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position:  200% 0;
+  }
+  100% {
+    background-position: 0 -200%;
+  }
+}
+
