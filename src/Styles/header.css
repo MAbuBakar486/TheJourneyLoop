@@ -76,7 +76,7 @@ background: linear-gradient(90deg, #0C3A2E, #4B0082 70%, #E76F51 100%);
 /* On smaller screens, style the collapse background and spacing */
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    background: linear-gradient(90deg, #003366, #009933);
+    /* background: linear-gradient(90deg, #003366, #009933); */
     border-radius: 15px;
     padding: 1rem 1.5rem;
     margin-top: 10px;

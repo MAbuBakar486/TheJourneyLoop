@@ -23,6 +23,7 @@ import Maintainance from './Pages/Maintainance.js';
 
 import PrivacyPolicy from './Pages/PrivacyPolicy.js';
 import Terms from './Pages/Terms.js';
+import Detailpage from './Pages/Detailpage.js';
 
 
 const AppRoutes = () => (
@@ -47,6 +48,7 @@ const AppRoutes = () => (
     <Route path="/terms" element={<Terms />} />
 
     {/* Others Page */}
+    <Route path="/desinationdetail/" element={<Detailpage />} />
     <Route path="/Success" element={<Success />} />
     <Route path="*" element={<NotFound />} />
     {/* <Route path="/" element={<Maintainance />} /> */}

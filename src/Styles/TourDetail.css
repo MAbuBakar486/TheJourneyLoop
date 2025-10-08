@@ -1,0 +1,90 @@
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+  background: linear-gradient(90deg, #f8f9fa 0%, #e3f2fd 100%);
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-text .badge {
+  background: linear-gradient(90deg, #0C3A2E, #4B0082 70%, #E76F51 100%);
+}
+
+.tour-title {
+  font-weight: 700;
+  color: #222;
+}
+
+.hero-text .book-now {
+  background: #0C3A2E;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.hero-text .book-now:hover {
+  opacity: 0.9;
+  background: #E76F51;
+  transition: all 0.3s;
+}
+
+/* ---------- IMAGE GRID ---------- */
+.hero-images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.hero-images-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 991px) {
+  .hero-images-grid {
+    display: none;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  .hero-images-grid img {
+    display: none;
+  }
+}
+
+
+/* Share Pop Up */
+.share-popup {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.share-icon {
+  font-size: 1.4rem;
+  color: #333;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  border: 1px solid #ddd;
+}
+
+.share-icon:hover {
+  background: linear-gradient(90deg, #0C3A2E, #4B0082 70%, #E76F51 100%);
+  color: white;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
