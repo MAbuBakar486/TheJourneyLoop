@@ -48,7 +48,7 @@ const AppRoutes = () => (
     <Route path="/terms" element={<Terms />} />
 
     {/* Others Page */}
-    <Route path="/desinationdetail/" element={<Detailpage />} />
+    <Route path="/destinationdetail/:id" element={<Detailpage />} />
     <Route path="/Success" element={<Success />} />
     <Route path="*" element={<NotFound />} />
     {/* <Route path="/" element={<Maintainance />} /> */}

@@ -5,6 +5,7 @@ import "../Styles/TourDetail.css";
 import { Fade } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 import { Slide, Zoom } from 'react-awesome-reveal';
+import { useLocation } from "react-router-dom";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 
 
@@ -55,6 +56,10 @@ const faqAnswers = {
 
 
 const TourDetail = () => {
+      const { state } = useLocation(); // receive passed data
+  const tour = state || {}; // fallback empty object
+
+
     const text = "Frequently Asked Questions".split("");
     const [openQuestion, setOpenQuestion] = useState(null);
 
@@ -87,10 +92,10 @@ const TourDetail = () => {
 
 
     return (
-        <div className="tour-detail">
+        <div className="tour-detail mt-5">
 
             {/* ===== HERO SECTION ===== */}
-            <section className="hero-section py-5">
+            <section className="Dhero-section py-5">
                 <Container>
                     <Row className="align-items-center">
 
@@ -98,9 +103,9 @@ const TourDetail = () => {
                         <Col lg={6} md={12} className="mb-4 mb-lg-0">
                             <div className="hero-text">
                                 <span className="badge bg-gradient fw-semibold mb-3">5 Days</span>
-                                <h1 className="tour-title mb-2">Tropical Paradise</h1>
+                                <h1 className="tour-title mb-2">{tour.Place_Name}</h1>
                                 <p className="text-muted mb-3">
-                                    <i className="bi bi-geo-alt-fill text-primary"></i> Maldives &nbsp; | &nbsp;
+                                    <i className="bi bi-geo-alt-fill text-primary"></i> {tour.province} &nbsp; | &nbsp;
                                     ⭐ 5 (189 reviews) &nbsp; | &nbsp; 👥 2–4 people
                                 </p>
                                 <p className="lead text-secondary">
