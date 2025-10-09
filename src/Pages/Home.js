@@ -29,23 +29,23 @@ const Home = () => {
 
     const blogs = [
     {
-      img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+      img: "https://i.brecorder.com/primary/2025/03/2405055424e1b34.jpg",
       title: "Experience the iconic Times Square ball drop or a scenic river cruise.",
     },
     {
-      img: "https://images.unsplash.com/photo-1598928506311-c55ded7e2d4d",
+      img: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Shangrila_resort_skardu.jpg",
       title: "Marvel at extravagant displays near Burj Khalifa and enjoy lavish parties.",
     },
     {
-      img: "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+      img: "https://upload.wikimedia.org/wikipedia/commons/7/70/Neeulm_Valley_AJK_%28Arang_Kel%29.jpg",
       title: "Revel in riverside festivities and rooftop views of the fireworks.",
     },
     {
-      img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+      img: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Karachi_Port_Trust_Building-1.jpg",
       title: "8 Amazing Places to Celebrate New Year 2024.",
     },
     {
-      img: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1",
+      img: "https://cdn-blog.zameen.com/blog/wp-content/uploads/2020/01/Cover-29-01.jpg",
       title: "Book a hotel with Eiffel Tower views for a romantic stay.",
     },
   ];
@@ -171,10 +171,10 @@ const testimonials = [
 
 
           <div className="hero-buttons">
-            <button className="btn btn-outline-secondary text-white  me-3">Contact Support</button>
+            <button className="btn btn-outline-secondary text-white  me-3" onClick={() => window.location.href = 'https://wa.me/923026716464' } target="_blank">Contact Support</button>
             <button
                 className="btn btn-primary btn-modern"
-                onClick={() => window.location.href = '/about-us/'}
+                onClick={() => window.location.href = '/Contactus/'}
               >
                 Send us a Message
               </button>
@@ -294,7 +294,7 @@ const testimonials = [
 
       {/* Explore button */}
       <div className="text-center mt-5">
-        <button className="btn btn-outline-dark explore-btn">
+        <button className="btn btn-outline-dark explore-btn" onClick={() => window.location.href = '/Cities/'}>
           Explore All Cities
         </button>
       </div>
@@ -302,7 +302,7 @@ const testimonials = [
 
 <section className="container my-5 popular-cities">
       <div className="text-center mb-5">
-        <h2 className="section-title" style={{color:"Playfair Display"}}>Popular UK Cities</h2>
+        <h2 className="section-title" style={{color:"Playfair Display"}}>Our Trip's Gallery</h2>
         <p className="section-subtitle">
           Explore best city photos below and see the beauty
         </p>
@@ -390,7 +390,7 @@ const testimonials = [
                 className="btn btn-primary btn-modern"
                 onClick={() => window.location.href = '/about-us/'}
               >
-                Send us a Message
+                learn More
               </button>
       </div>
     </div>

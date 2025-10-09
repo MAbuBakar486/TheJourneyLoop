@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../Styles/About.css';  // using SCSS (you can convert to CSS) 
 import CountUp from 'react-countup';
+import Car1 from "../Assets/car1.png";
+import { Helmet } from "react-helmet-async";
 import classNames from 'classnames';
 import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
@@ -235,6 +237,15 @@ const AboutUs = () => {
   };
 
   return (
+    <>
+      <Helmet>
+          <title>About Us | The Journey Loop</title>
+  <meta
+    name="description"
+    content="The Journey Loop is Pakistan’s leading travel brand offering curated tours, rides, and rental services. Learn about our story, mission, and passion for travel excellence."
+  />
+      </Helmet>
+
     <div className="about-page">
       {/* Hero Section */}
       {/* Hero / Banner */}
@@ -281,7 +292,7 @@ const AboutUs = () => {
       <section className="our-story-section py-5">
         <div className="container">
           <h2 className="fw-bold mb-4" style={{color:"#0C3A2E"}}>
-            JOurney
+            Journey
           </h2>
           <div className="row">
             <div className="col-12">
@@ -304,7 +315,7 @@ const AboutUs = () => {
         <div className="row align-items-center">
           {/* Right Column */}
           <div className="col-md-6 text-center">
-            <img src='https://travelwithzunair.pk/assets/images/about/Image-3.webp' alt="Travel Van" className="img-fluid rounded shadow" />
+            <img src={Car1} alt="Travel Van" className="img-fluid rounded shadow" />
           </div>
           {/* Left Column */}
           <div className="col-md-6 mt-4 mb-4">
@@ -317,7 +328,7 @@ const AboutUs = () => {
             <p className="text-muted">
               Experience worry-free adventures with our trusted agency, where over 80% of our customers return — thanks to our uncompromising standards, seamless service, and commitment to listening to your feedback. Discover exceptional planning and unforgettable travel experiences, tailored just for you.
             </p>
-            <a href="/destinations" className="btn btn-primary btn-modern fw-bold px-4 py-2 mt-3 btn-modern">
+            <a href="/Cities" className="btn btn-primary btn-modern fw-bold px-4 py-2 mt-3 btn-modern">
               Explore Destinations <i className="bi bi-arrow-up-right ms-2 mb-4"></i>
             </a>
           </div>
@@ -478,7 +489,7 @@ const AboutUs = () => {
             <p className="text-muted">
               Experience worry-free adventures with our trusted agency, where over 80% of our customers return — thanks to our uncompromising standards, seamless service, and commitment to listening to your feedback. Discover exceptional planning and unforgettable travel experiences, tailored just for you.
             </p>
-            <a href="/destinations" className="btn btn-primary btn-modern fw-bold px-4 py-2 mt-3">
+            <a href="/tours" className="btn btn-primary btn-modern fw-bold px-4 py-2 mt-3">
               Explore Destinations <i className="bi bi-arrow-up-right ms-2 mb-4"></i>
             </a>
           </div>
@@ -598,13 +609,14 @@ const AboutUs = () => {
       {/* CTA Section */}
       <section className="cta-section py-5 text-center">
         <div className="container rounded-4 p-5 shadow">
-          <h2 className="mb-4">Ready to Create Your AI Avatar?</h2>
-          <button className="btn btn-primary px-5 py-2">
+          <h2 className="mb-4">Ready to Create Your Journey</h2>
+          <button className="btn btn-primary px-5 py-2" onClick={() => window.location.href = '/Contactus/'}>
             Contact Us
           </button>
         </div>
       </section>
     </div>
+    </>
   );
 };
 

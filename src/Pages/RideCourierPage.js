@@ -182,8 +182,7 @@ import { motion } from "framer-motion";
 import { db } from "../firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
-
-
+import { Helmet } from "react-helmet-async";
 const PHONE_FIELDS = ["number", "senderPhone", "recipientPhone"];
 
 const sanitizeDigits = (val = "", maxLen = 11) => {
@@ -460,6 +459,15 @@ setForm({
   };
 
   return (
+    <>
+    <Helmet>
+  <title>Our Bounes Service | The Journey Loop</title>
+  <meta
+    name="description"
+    content="Browse curated tour packages and upcoming departures from The Journey Loop. Group tours, honeymoon packages, solo adventures and local experiences across Pakistan."
+  />
+</Helmet>
+
     <div className="ride-courier-container" style={{marginTop:"90px",marginBottom:"30px"}}>
       <div className="container">
         <Fade triggerOnce>
@@ -758,6 +766,7 @@ setForm({
         </motion.form>
       </div>
     </div>
+    </>
   );
 };
 

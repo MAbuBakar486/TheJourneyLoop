@@ -158,8 +158,11 @@ const FaqPage = () => {
   return (
     <>
       <Helmet>
-        <title>Frequently Asked Questions || The Journey Loop</title>
-        <meta name="description" content="Free heating, insulation, and solar panel grants across the UK. Transform your home’s energy efficiency today." />
+        <title>Frequently Asked Questions | The Journey Loop</title>
+        <meta
+          name="description"
+          content="Answers to common questions about bookings, custom trips, payments, and services at The Journey Loop — your travel partner across Pakistan."
+        />
       </Helmet>
 
       <div className="faq-wrapper">

@@ -1,6 +1,7 @@
 // ContactPage.jsx
 import React,{useState} from "react";
 import { db } from "../firebase.js";
+import { Helmet } from "react-helmet-async";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/Contact.css";
@@ -63,6 +64,15 @@ const ContactPage = () => {
   };
 
   return (
+    <>
+    <Helmet>
+  <title>Contact Us | The Journey Loop</title>
+  <meta
+    name="description"
+    content="Get in touch with The Journey Loop for bookings, support or custom trip requests. Reach us via phone, email, or our contact form — we're here 24/7."
+  />
+</Helmet>
+
     <div className="contact-page">
       {/* Header */}
       <section className="contact-header py-5">
@@ -237,6 +247,7 @@ const ContactPage = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

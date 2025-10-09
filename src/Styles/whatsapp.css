@@ -1,28 +1,31 @@
-/* Base (desktop & large screens): NO glow */
+/* ✅ WhatsApp Button fixed to viewport center (screen middle-right) */
+
 .wa-button {
   position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #25d366;
+  top: 50vh;                 /* ✅ Center relative to viewport height */
+  right: 20px;               /* distance from right edge */
+  transform: translateY(-50%); /* perfectly center vertically */
+  background: linear-gradient(135deg, #0C3A2E, #4B0082 70%, #E76F51);
   color: #fff;
-  padding: 12px 18px;
-  border-radius: 30px;
+  padding: 14px 20px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   text-decoration: none;
-  transition: background 0.25s ease;
-  z-index: 9999;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  writing-mode: vertical-rl; /* Make it vertical */
-  animation: none; /* <- important: no glow on large screens */
+  transition: all 0.3s ease;
+  z-index: 99999;
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .wa-button:hover {
-  background: #1ebe57;
+  transform: translateY(-50%) scale(1.05);
+  background: linear-gradient(135deg, #E76F51, #4B0082);
 }
 
 .wa-icon {
@@ -30,24 +33,31 @@
   line-height: 1;
 }
 
-/* Small screens: hide text, round icon button, ENABLE glow */
+/* ✅ Mobile screens: smaller and circular, still centered on right side */
 @media (max-width: 768px) {
-  .wa-text { display: none; }
+  .wa-text {
+    display: none;
+  }
 
   .wa-button {
-    padding: 12px;
+    padding: 14px;
     border-radius: 50%;
-    box-shadow: none;
-    animation: glowing 0.9s infinite alternate; /* glow only on small screens */
+    top: 50vh;               /* ✅ still centered relative to viewport */
+    right: 16px;
+    transform: translateY(-50%);
+    writing-mode: horizontal-tb;
+    box-shadow: 0 0 18px rgba(231, 111, 81, 0.4);
   }
 }
 
-/* Glow animation (green aura) */
-@keyframes glowing {
-  0% {
-    box-shadow: 0 0 6px #25d366, 0 0 12px #25d366, 0 0 18px #25d366;
-  }
-  100% {
-    box-shadow: 0 0 18px #25d366, 0 0 32px #25d366, 0 0 48px #25d366;
-  }
+/* Optional soft glow */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px rgba(231, 111, 81, 0.3); }
+  50% { box-shadow: 0 0 22px rgba(231, 111, 81, 0.6); }
+  100% { box-shadow: 0 0 10px rgba(231, 111, 81, 0.3); }
 }
+
+.wa-button {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+

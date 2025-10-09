@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaStar, FaUsers, FaMapMarkerAlt, FaClock, FaCalendarAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import { Fade,Zoom } from "react-awesome-reveal";
 
@@ -144,6 +145,15 @@ const CitiesPage = () => {
   };
 
   return (
+
+    <>
+    <Helmet>
+  <title>Explore Cities | The Journey Loop</title>
+  <meta
+    name="description"
+    content="Discover Pakistan’s top destinations—Skardu, Hunza, Lahore and more. Browse city guides, highlights, tour packages and travel tips from The Journey Loop."
+  />
+</Helmet>
     <div className="container" style={{ marginTop: "90px" }}>
       <h2
         className="text-center fw-bold mb-4 mt-5"
@@ -281,20 +291,7 @@ const CitiesPage = () => {
                       >
                         Book Now
                       </button>
-
-                      {/* <button
-                        className="btn flex-fill"
-                        style={{
-                          backgroundColor: "#0C3A2E",
-                          color: "white",
-                          border: "none",
-                        }}
-                        onClick={() =>
-                          navigate(`/destinationdetail/${tour.id}`)
-                        }
-                      >
-                        Detail
-                      </button> */}
+                      
                       <button
                         className="btn flex-fill"
                         style={{
@@ -442,6 +439,8 @@ const CitiesPage = () => {
         </div>
       )}
     </div>
+    </>
+    
   );
 };
 

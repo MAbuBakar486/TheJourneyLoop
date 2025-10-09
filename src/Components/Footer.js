@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import "../Styles/Footer.css";
+import Footerlogo from "../Assets/Flogo1.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -17,35 +18,37 @@ const Footer = () => {
           {/* First column with Logo */}
           <Col lg={4} md={12} className="footer-logo mb-4 mb-lg-0 text-md-start text-center">
             <img
-              src="https://pgs-website.vercel.app/static/media/Flogo212.da18f59861cad87b2aa3.png"   // 🔹 replace with your logo path
+              src={Footerlogo}   // 🔹 replace with your logo path
               alt="Logo"
               className="footer-logo-img"
             />
-            <p className="footer-brand-text">Tour App Tour AppTour AppTour AppTour AppTour AppTour AppTour AppTour AppTour AppTour AppTour AppTour App</p>
+            <p className="footer-brand-text">
+                The Journey Loop — crafting seamless travel experiences across Pakistan’s breathtaking destinations.
+              </p>
           </Col>
 
           {/* Other three evenly spaced */}
           <Col lg={2} md={4} sm={6} className="mb-4 mb-md-0">
             <h5>Help & Services</h5>
             <ul>
-              <li>How does it work</li>
-              <li>FAQs</li>
-              <li>Contact</li>
+              <Link to={"/faq/"} className="text-decoration-none"><li>FAQ's</li></Link>
+              <Link to={"/PrivacyPolicy/"} className="text-decoration-none"><li>Privacy Policy</li></Link>
+              <Link to={"/terms/"} className="text-decoration-none"><li>Terms & Condition</li></Link>
             </ul>
           </Col>
           <Col lg={2} md={4} sm={6} className="mb-4 mb-md-0">
             <h5>To Explore</h5>
             <ul>
-              <li>Accommodations</li>
-              <li>Experiences</li>
-              <li>Blog</li>
+              <Link to={"/Cities/"} className="text-decoration-none"><li>Explore Cities</li></Link>
+              <Link to={"/tours/"} className="text-decoration-none"><li>Explore Tours</li></Link>
+              <Link to={"/Ride-Courier/"} className="text-decoration-none"><li>Customized Trip</li></Link>
             </ul>
           </Col>
           <Col lg={2} md={4} sm={6}>
             <h5>Other Possibilities</h5>
             <ul>
-              <li>Give away</li>
-              <li>Subscribe</li>
+              <Link to={"/RentACar/"} className="text-decoration-none"><li>Rent A Car</li></Link>
+              <Link to={"/"} className="text-decoration-none"><li>SiteMap</li></Link>
             </ul>
           </Col>
         </Row>
@@ -53,21 +56,25 @@ const Footer = () => {
         {/* Row 2: Subscribe + Store Badges */}
         <Row className="align-items-center mb-4 footer-middle">
           <Col md={6} className="text-md-start text-center mb-3 mb-md-0">
-            <button className="subscribe-btn d-none d-sm-inline-block">
-              Subscribe
+            <button className="subscribe-btn d-none d-sm-inline-block" onClick={() => window.location.href = '/Contactus/'}>
+              Contact Us
             </button>
           </Col>
           <Col md={6} className="text-md-end text-center">
-            <img
+            <a href="https://apps.apple.com/" target="_blank">
+              <img
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
               alt="App Store"
               className="store-badge"
             />
-            <img
+            </a>
+            <a href="https://play.google.com/" target="_blank">
+              <img
               src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
               alt="Google Play"
               className="store-badge"
             />
+            </a>
           </Col>
         </Row>
 

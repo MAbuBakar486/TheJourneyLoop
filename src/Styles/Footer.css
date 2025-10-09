@@ -1,15 +1,32 @@
 .footer {
-  background: #000;
+  background: #0A392C;
   color: #fff;
   padding: 60px 0 25px;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
 /* Logo */
 .footer-logo-img {
-  max-width: 180px;
-  height: auto;
+  height: 80px;                  /* 🔹 larger, but still balanced */
+  width: auto;                   /* keeps natural aspect ratio */
+  filter: brightness(0) invert(1); /* 🔹 makes it white */
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
 }
+
+.footer-logo-img:hover {
+  transform: scale(1.05);        /* subtle hover effect (optional) */
+}
+
 
 /* Column Headings */
 .footer h5 {
@@ -76,11 +93,11 @@
 
 .footer-brand-text {
   font-size: 16px;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-top: 10px;
   color: #fff;
   letter-spacing: 0.5px;
-  font-family: "Georgia", "Times New Roman", serif; /* professional look */
+  font-family: "Georgia", "Times New Roman", serif;
 }
 
 

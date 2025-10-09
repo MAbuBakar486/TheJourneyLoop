@@ -18,14 +18,14 @@ function App() {
     <HelmetProvider>
       <div id="app-container">
         <Navbar />
-        {/* <Preloader duration={4700} /> */}
+        <Preloader duration={4700} />
 
         <SmoothScrollWrapper>
         <div className="main-content">
           <AppRoutes />   {/* ✅ works now */}
         </div>
 
-        <WhatsAppButton />
+
         <Footer />
         </SmoothScrollWrapper>
 
@@ -34,7 +34,7 @@ function App() {
         <ResetPage />
         {/* <Cursor /> */}
       </div>
-
+        <WhatsAppButton />
       <Toaster
         position="top-right"
         containerStyle={{ zIndex: 999999 }}

@@ -78,7 +78,10 @@ const ChooseUs = () => {
     <>
       <Helmet>
         <title>Why Choose Us || The Journey Loop</title>
-        <meta name="description" content="Free heating, insulation, and solar panel grants across the UK. Transform your home’s energy efficiency today." />
+          <meta
+    name="description"
+    content="Discover why travelers across Pakistan trust The Journey Loop — from premium vehicles and expert guides to flexible bookings and personalized travel experiences."
+  />
       </Helmet>
 
       {/* Header Section */}
