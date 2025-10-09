@@ -85,9 +85,30 @@ const Footer = () => {
             <p className="copyright">© 2025 TourApp. All rights reserved.</p>
           </Col>
           <Col md={6} className="text-md-end text-center social-icons">
-            <FaFacebookF />
-            <FaTwitter />
-            <FaInstagram />
+            <a className="text-white"
+    href="https://www.facebook.com/thejourneyloop"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FaFacebookF />
+  </a>
+  <a className="text-white"
+    href="https://www.instagram.com/thejourneyloop"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
+<a className="text-white"
+    href="https://x.com/thejourneyloop"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Twitter"
+  >
+    <FaTwitter />
+  </a>
           </Col>
         </Row>
       </Container>
