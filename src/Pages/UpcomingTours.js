@@ -16,7 +16,7 @@ import { Helmet } from "react-helmet-async";
 // import { Fade, Zoom } from "react-awesome-reveal";
 
 // ✅ Firestore Imports
-import { db } from "../firebase";
+import { db } from "../firebase.js";
 import { collection, getDocs, addDoc, serverTimestamp } from "firebase/firestore";
 
 const UpcomingTours = () => {

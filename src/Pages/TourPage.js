@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { Helmet } from "react-helmet-async";
-import { db } from "../firebase"; // ✅ your firebase config file
+import { db } from "../firebase.js"; // ✅ your firebase config file
 import {
   collection,
   getDocs,

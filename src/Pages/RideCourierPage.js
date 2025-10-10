@@ -179,7 +179,7 @@ import "../Styles/RideCourierPage.css";
 
 
 import { motion } from "framer-motion";
-import { db } from "../firebase";
+import { db } from "../firebase.js";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import { Helmet } from "react-helmet-async";

@@ -361,7 +361,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { Container, Row, Col, Button, Card, Spinner } from "react-bootstrap";
 
 // Firestore
-import { db } from "../firebase";
+import { db } from "../firebase.js";
 import {
   collection,
   getDoc,
