@@ -24,6 +24,7 @@ import Maintainance from './Pages/Maintainance.js';
 import PrivacyPolicy from './Pages/PrivacyPolicy.js';
 import Terms from './Pages/Terms.js';
 import Detailpage from './Pages/Detailpage.js';
+import AddCity from './Components/Addcity.js'
 
 
 const AppRoutes = () => (
@@ -35,6 +36,7 @@ const AppRoutes = () => (
     <Route path="/faq" element={<Faq />} />
     <Route path="/Cities" element={<CitiesPage />} />
     <Route path="/Why-Choose-Us" element={<ChooseUs />} />
+    <Route path="/Addcity" element={<AddCity />} />
     
       {/* Services Links */}
     <Route path="/RentACar" element={<CarRentalPage />} />

@@ -76,45 +76,45 @@ const Home = () => {
   const deals = [
     {
       id: 1,
-      title: "Best in Derby",
-      city: "Derby",
+      title: "Kashmir, Gilgit-Baltistan",
+      city: "Kashmir",
       discount: "30% off",
-      days: "19 days and 18 nights",
+      days: "7 days and 6 nights",
       flight: "Return international flights*",
-      date: "6 Mar - Nov 2024",
-      bookBy: "30 Oct 2024",
+      date: "6 Mar - Nov 2025",
+      bookBy: "30 Oct 2025",
       rating: 4.5,
-      oldPrice: "$20,999",
-      newPrice: "$14,595",
-      img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+      oldPrice: "20000",
+      newPrice: "16,595",
+      img: "https://upload.wikimedia.org/wikipedia/commons/7/70/Neeulm_Valley_AJK_%28Arang_Kel%29.jpg",
     },
     {
       id: 2,
-      title: "Best of Manchester",
-      city: "Manchester",
+      title: "Islamabad, ICT",
+      city: "Islamabad",
       discount: "20% off",
-      days: "8 days and 5 nights",
+      days: "3 days and 2 nights",
       flight: "Free accommodation and touring",
-      date: "Mar - Apr 2024",
-      bookBy: "16 Mar 2024",
+      date: "Mar - Apr 2026",
+      bookBy: "16 Mar 2025",
       rating: 4.5,
-      oldPrice: "$6,999",
-      newPrice: "$3,390",
-      img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+      oldPrice: "7000",
+      newPrice: "4000",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/King_Faisal_Mosque.jpg/1200px-King_Faisal_Mosque.jpg",
     },
     {
       id: 3,
-      title: "Best of Spain, Intrepid",
-      city: "Spain",
+      title: "Lahore, PK",
+      city: "Lahore",
       discount: "40% off",
-      days: "15 days and 14 nights",
-      flight: "Last minute sale - save $537 pp",
-      date: "Aug - Dec 2024",
-      bookBy: "24 Jul 2024",
+      days: "3days and 2 nights",
+      flight: "Last minute sale - save 500 pp",
+      date: "Aug - Dec 2026",
+      bookBy: "24 Jul 2026",
       rating: 4.5,
-      oldPrice: "$8,999",
-      newPrice: "$7,596",
-      img: "https://images.unsplash.com/photo-1505761671935-60b3a7427bad",
+      oldPrice: "5000",
+      newPrice: "3000",
+      img: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Badshahi_Mosquee%2C_Lahore.jpg",
     },
   ];
 
@@ -483,7 +483,7 @@ const testimonials = [
         <div
           className="see-all-link mt-4"
           onClick={() =>
-            window.open("https://www.trustpilot.com/review/pgs-website.vercel.app", "_blank")
+            window.open("https://www.trustpilot.com/review/thejourneyloop.com", "_blank")
           }
         >
           See all Reviews
