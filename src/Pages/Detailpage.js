@@ -833,7 +833,7 @@ const maxPeople = tour.maxPeople ?? "N/A";
           <Zoom>
             <div className="row justify-content-center">
               <div className="col-md-3 col-sm-6 mb-4">
-                <div className="contact-box"><i className="fas fa-phone fa-2x mb-2"></i><p><strong>Call Us</strong></p><p><a href='tel:(92)3068629918' style={{ textDecoration: "none", color: "#0C3A2E" }}>(92) 306-8629918</a><br />Available 24/7</p></div>
+                <div className="contact-box"><i className="fas fa-phone fa-2x mb-2"></i><p><strong>Call Us</strong></p><p><a href='tel:(92)3026716764' style={{ textDecoration: "none", color: "#0C3A2E" }}>(92) 302-6716764</a><br />Available 24/7</p></div>
               </div>
               <div className="col-md-3 col-sm-6 mb-4">
                 <div className="contact-box"><i className="fas fa-comments fa-2x mb-2"></i><p><strong>Live Chat</strong></p><p>Instant support<br />1PM – 10PM</p></div>

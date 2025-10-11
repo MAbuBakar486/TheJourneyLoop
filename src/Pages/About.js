@@ -349,128 +349,140 @@ const AboutUs = () => {
           <h2 className="fw-bold" style={{color:"#0C3A2E"}}><Fade>Comprehensive Energy Solutions</Fade></h2>
           <Zoom>
             <p className="text-muted mb-5">
-              From insulation to renewable energy, we provide complete energy efficiency solutions backed Under linked by the UK Government's ECO4 scheme.
+              From city tours to customized holiday plans, The Journey Loop offers complete travel experiences — designed, managed, and supported by trusted professionals.
             </p>
           </Zoom>
 
-          <Fade>
-            <div className="row g-4 justify-content-center">
-              {/* Submission Administrator */}
-              <div className="col-md-5">
-                <div className="service-card h-100 p-4 text-start">
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <div className="icon-box">
-                      <i className="bi bi-person-badge-fill"></i>
-                    </div>
-                    <span className="badge bg-primary-subtle text-primary">Core Service</span>
-                  </div>
-                  <h5 className="fw-bold">Submission Administrator</h5>
-                  <p className="text-muted">
-                    Ensuring timely and accurate submissions of all project-related documents.
-                  </p>
-                  <ul className="list-unstyled mb-4">
-                    <li>✅ Document Preparation</li>
-                    <li>✅ Accurate Filing</li>
-                    <li>✅ Deadline Management</li>
-                    <li>✅ Stakeholder Coordination</li>
-                  </ul>
-                  <div className="star-divider d-flex align-items-center justify-content-center my-3">
-                    <span className="star mx-2">★</span>
-                    <span className="line"></span>
-                    <span className="star mx-2">★</span>
-                  </div>
+<Fade>
+  <div className="row g-4 justify-content-center">
+    {/* City Trips */}
+    <div className="col-md-5">
+      <div className="service-card h-100 p-4 text-start">
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <div className="icon-box">
+            <i className="bi bi-geo-alt-fill text-primary"></i>
+          </div>
+          <span className="badge bg-primary-subtle text-primary">City Trips</span>
+        </div>
 
-                </div>
-              </div>
+        <h5 className="fw-bold">City Trips & Sightseeing</h5>
+        <p className="text-muted">
+          Carefully curated day and half-day city experiences — iconic landmarks, cultural hotspots and local flavors with trusted local guides.
+        </p>
 
-              {/* Project Handling */}
-              <div className="col-md-5">
-                <div className="service-card h-100 p-4 text-start">
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <div className="icon-box">
-                      <i className="bi bi-diagram-3-fill text-success"></i>
-                    </div>
-                    <span className="badge bg-success-subtle text-success">Management</span>
-                  </div>
-                  <h5 className="fw-bold">Project Handling</h5>
-                  <p className="text-muted">
-                    Comprehensive project oversight to ensure smooth execution from start to finish.
-                  </p>
-                  <ul className="list-unstyled mb-4">
-                    <li>✅ Task Delegation</li>
-                    <li>✅ Progress Monitoring</li>
-                    <li>✅ Risk Management</li>
-                    <li>✅ Efficient Delivery</li>
-                  </ul>
-                  <div className="star-divider d-flex align-items-center justify-content-center my-3">
-                    <span className="star mx-2">★</span>
-                    <span className="line"></span>
-                    <span className="star mx-2">★</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Fade>
+        <ul className="list-unstyled mb-4">
+          <li>✅ Flexible pick-up & drop-off within the city</li>
+          <li>✅ Expert local guides & curated itineraries</li>
+          <li>✅ Comfortable vehicles and punctual schedules</li>
+          <li>✅ Options for private or group tours</li>
+        </ul>
 
-          <div className="mb-4 mt-4"></div>
+        <div className="star-divider d-flex align-items-center justify-content-center my-3">
+          <span className="star mx-2">★</span>
+          <span className="line"></span>
+          <span className="star mx-2">★</span>
+        </div>
+      </div>
+    </div>
 
-          <Fade>
-            <div className="row g-4 justify-content-center">
-              {/* Building Layout Expertise */}
-              <div className="col-md-5">
-                <div className="service-card h-100 p-4 text-start">
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <div className="icon-box">
-                      <i className="bi bi-building-fill"></i>
-                    </div>
-                    <span className="badge bg-info-subtle text-info">Expertise</span>
-                  </div>
-                  <h5 className="fw-bold">Building Layout Expertise</h5>
-                  <p className="text-muted">
-                    Professional planning and layout design tailored for efficiency and safety.
-                  </p>
-                  <ul className="list-unstyled mb-4">
-                    <li>✅ Structural Planning</li>
-                    <li>✅ Optimized Layouts</li>
-                    <li>✅ Space Utilization</li>
-                    <li>✅ Modern Design Standards</li>
-                  </ul>
-                  <div className="star-divider d-flex align-items-center justify-content-center my-3">
-                    <span className="star mx-2">★</span>
-                    <span className="line"></span>
-                    <span className="star mx-2">★</span>
-                  </div>
-                </div>
-              </div>
+    {/* Customized Trips */}
+    <div className="col-md-5">
+      <div className="service-card h-100 p-4 text-start">
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <div className="icon-box">
+            <i className="bi bi-stars text-success"></i>
+          </div>
+          <span className="badge bg-success-subtle text-success">Customized</span>
+        </div>
 
-              {/* Compliance Expertise */}
-              <div className="col-md-5">
-                <div className="service-card h-100 p-4 text-start">
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <div className="icon-box">
-                      <i className="bi bi-shield-check text-warning"></i>
-                    </div>
-                    <span className="badge bg-warning-subtle text-warning">Trusted</span>
-                  </div>
-                  <h5 className="fw-bold">Compliance Expertise</h5>
-                  <p className="text-muted">
-                    Ensuring adherence to regulations, legal standards, and safety protocols.
-                  </p>
-                  <ul className="list-unstyled mb-4">
-                    <li>✅ Regulatory Compliance</li>
-                    <li>✅ Safety Standards</li>
-                    <li>✅ Risk Assessment</li>
-                    <li>✅ Legal Documentation</li>
-                  </ul>
-                  <div className="star-divider d-flex align-items-center justify-content-center my-3">
-                    <span className="star mx-2">★</span>
-                    <span className="line"></span>
-                    <span className="star mx-2">★</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Fade>
+        <h5 className="fw-bold">Customized Trip Planning</h5>
+        <p className="text-muted">
+          Tailor-made itineraries built around your interests — adventure, culture, family or honeymoon trips crafted end-to-end by our travel experts.
+        </p>
+
+        <ul className="list-unstyled mb-4">
+          <li>✅ Personalized day-by-day itineraries</li>
+          <li>✅ Hotel, transport & activity bookings handled</li>
+          <li>✅ Budget-friendly and luxury options</li>
+          <li>✅ Local insights and 24/7 support</li>
+        </ul>
+
+        <div className="star-divider d-flex align-items-center justify-content-center my-3">
+          <span className="star mx-2">★</span>
+          <span className="line"></span>
+          <span className="star mx-2">★</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</Fade>
+
+<div className="mb-4 mt-4"></div>
+
+<Fade>
+  <div className="row g-4 justify-content-center">
+    {/* Ride Services */}
+    <div className="col-md-5">
+      <div className="service-card h-100 p-4 text-start">
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <div className="icon-box">
+            <i className="bi bi-car-front-fill text-info"></i>
+          </div>
+          <span className="badge bg-info-subtle text-info">Ride</span>
+        </div>
+
+        <h5 className="fw-bold">Ride Services & Transfers</h5>
+        <p className="text-muted">
+          Reliable rides and airport transfers across major cities — professional chauffeurs, clean vehicles and timely pick-ups for a stress-free trip.
+        </p>
+
+        <ul className="list-unstyled mb-4">
+          <li>✅ Airport transfers & point-to-point rides</li>
+          <li>✅ Hourly or full-day hires with driver</li>
+          <li>✅ Transparent pricing and verified drivers</li>
+          <li>✅ Family-friendly vehicles and luggage support</li>
+        </ul>
+
+        <div className="star-divider d-flex align-items-center justify-content-center my-3">
+          <span className="star mx-2">★</span>
+          <span className="line"></span>
+          <span className="star mx-2">★</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Courier & Logistics */}
+    <div className="col-md-5">
+      <div className="service-card h-100 p-4 text-start">
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <div className="icon-box">
+            <i className="bi bi-box-seam text-warning"></i>
+          </div>
+          <span className="badge bg-warning-subtle text-warning">Courier</span>
+        </div>
+
+        <h5 className="fw-bold">Courier & Logistics</h5>
+        <p className="text-muted">
+          Fast and secure parcel delivery and logistics solutions — ideal for travel-related shipments and business deliveries across Pakistan.
+        </p>
+
+        <ul className="list-unstyled mb-4">
+          <li>✅ Same-day and next-day delivery options</li>
+          <li>✅ Secure packaging and tracking updates</li>
+          <li>✅ Reliable network across major cities</li>
+          <li>✅ Competitive rates for bulk and corporate jobs</li>
+        </ul>
+
+        <div className="star-divider d-flex align-items-center justify-content-center my-3">
+          <span className="star mx-2">★</span>
+          <span className="line"></span>
+          <span className="star mx-2">★</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</Fade>
+
 
         </div>
       </section>

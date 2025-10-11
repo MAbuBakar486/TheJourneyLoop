@@ -246,7 +246,7 @@ const FaqPage = () => {
                   <div className="contact-box">
                     <i className="fas fa-phone fa-2x mb-2"></i>
                     <p><strong>Call Us</strong></p>
-                    <p> <a href='tel:(92) 306-8629918' style={{ textDecoration: "none", color:"#0C3A2E" }}>(92) 306-8629918</a><br />Available 24/7</p>
+                    <p> <a href='tel:(92)302-6716764' style={{ textDecoration: "none", color:"#0C3A2E" }}>(92) 302-676764</a><br />Available 24/7</p>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6 mb-4">
