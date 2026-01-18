@@ -1,0 +1,205 @@
+/* phoneinput.css */
+
+/* Scope only inside login form */
+.login__form .react-tel-input {
+  width: 100% !important;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.login__form .react-tel-input .form-control {
+  width: 100% !important;
+  border-radius: 8px !important;
+  padding: 12px 12px 12px 50px !important;
+  border: 1px solid #ddd !important;
+  background: #f9f9f9 !important;
+  font-size: 0.95rem !important;
+  box-shadow: none !important;
+}
+
+.login__form .react-tel-input .flag-dropdown {
+  border: 1px solid #ddd !important;
+  border-radius: 8px 0 0 8px !important;
+  background: #fff !important;
+}
+
+/* Ensure dropdown does not break modal */
+.login__form .react-tel-input .country-list {
+  z-index: 10000 !important;
+}
+
+
+.glow-button {
+background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold */
+  /* background: linear-gradient(135deg, #ffffff, #f1f1f1);  */
+  color: #B22222 !important; /* Deep red text */
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.9);
+  animation: glowing 2s infinite alternate;
+}
+
+
+/* Preloader CSS for image*/
+/* .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; 
+}
+
+.preloader-logo {
+  width: 120px; /* adjust size 
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+} */
+/* The Journey Loop | Brand Themed Preloader */
+
+/* Root overlay */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px;
+}
+
+/* Container */
+.preloader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  max-width: 720px;
+  width: 100%;
+}
+
+/* Logo */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: auto;
+  pointer-events: none;
+}
+
+.preloader-logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transform-origin: center;
+  animation: logoPop 900ms cubic-bezier(.2,.9,.3,1) both;
+  filter: drop-shadow(0 8px 18px rgba(12,58,46,0.16));
+}
+
+/* Brand gradient shimmer title */
+.preloader-title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  /* background: radial-gradient(circle at center, #ffffff 40%, #f9f9f9 100%); */
+
+  /* 🔹 Brand gradient: Green → Indigo → Coral */
+  background: linear-gradient(90deg, #0C3A2E 0%, #4B0082 70%, #E76F51 100%);
+  
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2.6s linear infinite;
+}
+
+/* Subtext */
+.preloader-sub {
+  margin: 0;
+  color: #4B0082;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+/* Ring animation */
+.preloader-ring {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #0C3A2E, #E76F51);
+  transform-origin: center;
+  animation: ringBounce 900ms cubic-bezier(.2,.9,.3,1) infinite;
+}
+
+.ring-dot:nth-child(2) { animation-delay: 120ms; background: linear-gradient(145deg, #4B0082, #E76F51); }
+.ring-dot:nth-child(3) { animation-delay: 240ms; background: linear-gradient(145deg, #E76F51, #0C3A2E); }
+
+/* Animations */
+@keyframes logoPop {
+  0% { transform: scale(0.7) translateY(6px); opacity: 0; }
+  60% { transform: scale(1.06) translateY(0); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes ringBounce {
+  0%   { transform: translateY(0); opacity: 0.4; }
+  30%  { transform: translateY(-8px); opacity: 1; }
+  60%  { transform: translateY(0); opacity: 0.6; }
+  100% { transform: translateY(0); opacity: 0.4; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-wrap { width: 180px; }
+  .preloader-title { font-size: 22px; }
+  .preloader-sub { font-size: 13px; }
+}
+
+@media (max-width: 420px) {
+  .logo-wrap { width: 140px; }
+  .preloader-title { font-size: 20px; }
+  .preloader-sub { font-size: 12px; }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .preloader-logo,
+  .preloader-title,
+  .ring-dot {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+

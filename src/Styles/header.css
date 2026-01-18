@@ -1,0 +1,122 @@
+/*=============== GOOGLE FONTS ===============*/
+ @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+.custom-navbar {
+/* background: linear-gradient(135deg, #0C3A2E 0%, #4B0082 100%); */
+/* background: linear-gradient(120deg, #0C3A2E 30%, #2A3A7A 70%, #4B0082 100%); */
+background: linear-gradient(90deg, #0C3A2E, #4B0082 70%, #E76F51 100%);
+  border-radius: 50px;
+  margin: 10px auto;
+  padding: 8px 20px;
+  width: 90%;
+  transition: all 0.3s ease-in-out;
+  z-index: 1030;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important; /* removes Bootstrap’s default 3 lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Nav links white with subtle hover */
+.custom-navbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+.custom-navbar .nav-link:hover {
+  color: #b2ff59; /* a lighter lime green on hover */
+}
+
+.logo-text {
+  font-size: 0.8rem;
+  color: #E76F51;
+  letter-spacing: -1px;
+}
+
+.nav-link {
+  color: #606d8b;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: #007bff;
+}
+
+/* Get in touch button */
+.get-in-touch-btn {
+  color: #fff;
+  border-color: #00c853;
+  background-color: transparent;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-in-touch-btn:hover {
+  color: white;
+  background-color: #00c853;
+  border-color: white;
+}
+
+.custom-navbar .navbar-toggler {
+  position: relative; /* keeps it inline with flex container */
+  z-index: 1051; /* higher than collapse so it stays on top */
+}
+
+.navbar-collapse.show {
+  transition: height 0.3s ease;
+}
+
+/* On smaller screens, style the collapse background and spacing */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    /* background: linear-gradient(90deg, #003366, #009933); */
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 415px) {
+  .navbar-collapse {
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.8rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+
+  .get-in-touch-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+
+/* Show dropdown on hover (desktop only) */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* fixes small jump effect */
+  }
+  .navbar .dropdown-toggle::after {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+  }
+}

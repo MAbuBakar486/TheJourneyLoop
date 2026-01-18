@@ -1,0 +1,177 @@
+.faq-wrapper {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.faq-header {
+  background: linear-gradient(90deg,#003366,  #009933);
+  color: white;
+  padding: 7rem 1rem 4rem 1rem;
+}
+
+.faq-header .icon-circle {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  color: #00c6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.faq-header h1 {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.faq-header p {
+  color: yellow;
+}
+
+.faq-category-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+  color: #007bff;
+}
+
+/* Accordion */
+.accordion-button {
+  font-weight: 500;
+  background-color: #f8f9fa;
+  border: none;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Remove Bootstrap triangle icon */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Opened state */
+.accordion-button:not(.collapsed) {
+  color: #007bff;
+  background-color: #e9f0ff;
+  border-bottom: 1px solid #d0e2ff;
+}
+
+/* Custom toggle icon */
+.toggle-icon {
+  font-size: 1.5rem;
+  color: #0C3A2E;
+  margin-left: auto;
+}
+
+/* Animate answer body */
+.accordion-body {
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+/* When open */
+.accordion-collapse.show .accordion-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Remove Bootstrap red focus border */
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none;
+}
+
+/* Open answer styling */
+.accordion-collapse.show .accordion-body {
+  background-color: #f5faff;
+  border-left: 4px solid #007bff;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem 1.25rem;
+  margin-top: -1px;
+  box-shadow: inset 0 1px 0 #e0f0ff;
+}
+
+
+/* Contact Footer */
+/* CONTACT BOX MODERN EFFECT */
+.contact-box {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.contact-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #e6f7ff, #cceeff);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.contact-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.contact-box:hover::before {
+  left: 0;
+}
+
+.contact-box i,
+.contact-box p {
+  position: relative;
+  z-index: 1;
+}
+
+/* MODERN BUTTONS */
+.btn-modern {
+  padding: 0.65rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.btn-primary.btn-modern {
+  background: linear-gradient(135deg, #0C3A2E);
+  border: none;
+  color: #fff;
+}
+
+.btn-primary.btn-modern:hover {
+  background: linear-gradient(135deg, #E76F51);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 198, 255, 0.3);
+}
+
+.btn-outline-secondary.btn-modern {
+  border: 2px solid #6c757d;
+  color: #6c757d;
+  background-color: transparent;
+}
+
+.btn-outline-secondary.btn-modern:hover {
+  background-color: #f0f0f0;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

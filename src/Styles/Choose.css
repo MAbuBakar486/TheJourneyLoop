@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap');
+
+/* Header */
+.about-header {
+  background: #800020 url('https://muslimmatrimonial.com.pk/wp-content/themes/muslim_matrimonial/assets/img/webp/page_banners/page_banner_1.webp') no-repeat center;
+  background-size: cover;
+  padding: 80px 20px 120px; /* extra bottom padding for stacked effect */
+  position: relative;
+  color: #fff;
+}
+.about-header .header-overlay h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.about-header .header-overlay p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.choose-reasons-section {
+  background-color: #fff; /* or light gray if needed */
+}
+
+.choose-reasons-section h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #1b1c57;
+}
+
+.choose-reasons-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.reasons-grid-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.reasons-grid-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* Section */
+.team-stats-section {
+  background-color: #f8f9fc;
+  position: relative;
+}
+
+/* Circle Container */
+.team-stats-circle-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+
+/* Center Circle */
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.main-circle {
+  /* background-color: #16163f;
+  color: #00c99f;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white; */
+  background-color: #16163f;
+  color: #00c99f;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Dotted ring around center circle */  
+.main-circle::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 3px dashed #00c99f;
+  z-index: -1;
+}
+
+.stat-circle {
+  /* position: absolute;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: absolute;
+    width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gradient Progress */
+.circle-progress {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--gradient-color) calc(var(--value) * 1%),
+    black 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fillAnim 1.5s ease-in-out forwards;
+  transition: all 0.5s ease;
+}
+
+.circle-inner {
+  /* background: #fff;
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center; */
+    width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.circle-inner h4 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+}
+
+.circle-inner p {
+  margin: 0;
+  font-size: 12px;
+  color: #444;
+}
+
+/* Circle Positions */
+.position-0 { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+.position-1 { top: 20%; left: 10%; transform: translate(-50%, -50%); }
+.position-2 { top: 20%; left: 90%; transform: translate(-50%, -50%); }
+.position-3 { top: 70%; left: 95%; transform: translate(-50%, -50%); }
+.position-4 { top: 95%; left: 50%; transform: translate(-50%, -50%); }
+.position-5 { top: 70%; left: 5%; transform: translate(-50%, -50%); }
+
+
+/* Colors */
+.purple { --gradient-color: #6a00f4; }
+.blue { --gradient-color: #00aaff; }
+.indigo { --gradient-color: #3366ff; }
+.orange { --gradient-color: #ff6600; }
+.teal { --gradient-color: #00c99f; }
+.pink { --gradient-color: #e91e63; }
+
+/* Animation Keyframes */
+@keyframes fillAnim {
+  from {
+    background: conic-gradient(var(--gradient-color) 0%, black 0%);
+  }
+  to {
+    background: conic-gradient(
+      var(--gradient-color) calc(var(--value) * 1%),
+      black 0
+    );
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade-in helpers */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 1s;
+}
+
+/* Better connecting lines (lengths adjusted to actual circle positions) */
+.connecting-line {
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background-color: #333;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  z-index: 0;
+}
+
+/* Rotate each line toward corresponding stat circle */
+.line-0 { transform: rotate(270deg); } /* Top */
+.line-1 { transform: rotate(210deg); }
+.line-2 { transform: rotate(330deg); }
+.line-3 { transform: rotate(30deg); }
+.line-4 { transform: rotate(90deg); }
+.line-5 { transform: rotate(150deg); }
+
+.wcu-section {
+  position: relative;
+  background: url("https://muslimmatrimonial.com.pk/wp-content/themes/muslim_matrimonial/assets/img/webp/sections_background/obj_bg_cta.webp")
+    no-repeat center center/cover;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.st-heading{
+  font-family: "Great Vibes", cursive;
+  font-size: 56px;
+  color: #7d0a0a;
+  margin-top: 15px;
+}
