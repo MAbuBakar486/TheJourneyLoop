@@ -268,7 +268,7 @@ const TourPage = () => {
     <div style={{ textAlign: "center", paddingBottom:"15px" }}>
       Here, You can see Available tours list. For seeing Upcoming tours, Visit{" "}
       <a
-        href="https://www.thejourneyloop.com/upcomingtours/" target="_blank"
+        href="https://www.thejourneyloop.com/upcomingtours/" target="_blank" rel="noopener noreferrer"
         style={{
           color: hover ? "#0A392C" : "inherit",
           textDecoration: hover ? "underline" : "none",

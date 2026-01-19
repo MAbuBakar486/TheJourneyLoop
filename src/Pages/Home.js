@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import { Helmet } from "react-helmet-async";
+// import { Link } from 'react-router-dom';
+// import { Helmet } from "react-helmet-async";
 import "../Styles/Home.css";
-import Clients from "../Widgets/clients";
+import Clients from "../Widgets/clients.js";
 import { FaStar, FaClock, FaGlobeAmericas, FaComments, FaPiggyBank, FaCalendarAlt } from "react-icons/fa";
 // import { FaHeart, FaCalendarAlt, FaStar, FaUsers } from "react-icons/fa";
 
@@ -164,26 +164,26 @@ const Home = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      name: "Ayesha Khan",
-      title: "Travel Enthusiast",
-      avatar: 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',
-      text: "The Journey Loop made our Northern Pakistan trip unforgettable! From Hunza to Skardu, every detail was perfectly planned. I felt confident every step of the way."
-    },
-    {
-      name: "Bilal Ahmed",
-      title: "Adventure Seeker",
-      avatar: 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',
-      text: "Booking with The Journey Loop was smooth and stress-free. Their expert guidance and flexible options made exploring Pakistan a breeze!"
-    },
-    {
-      name: "Sara Malik",
-      title: "Family Traveler",
-      avatar: 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',
-      text: "Our family had the most amazing experience touring Pakistan. The Journey Loop’s attention to detail and local knowledge gave us total confidence."
-    }
-  ];
+  // const testimonials = [
+  //   {
+  //     name: "Ayesha Khan",
+  //     title: "Travel Enthusiast",
+  //     avatar: 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',
+  //     text: "The Journey Loop made our Northern Pakistan trip unforgettable! From Hunza to Skardu, every detail was perfectly planned. I felt confident every step of the way."
+  //   },
+  //   {
+  //     name: "Bilal Ahmed",
+  //     title: "Adventure Seeker",
+  //     avatar: 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',
+  //     text: "Booking with The Journey Loop was smooth and stress-free. Their expert guidance and flexible options made exploring Pakistan a breeze!"
+  //   },
+  //   {
+  //     name: "Sara Malik",
+  //     title: "Family Traveler",
+  //     avatar: 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',
+  //     text: "Our family had the most amazing experience touring Pakistan. The Journey Loop’s attention to detail and local knowledge gave us total confidence."
+  //   }
+  // ];
 
 
   const cities = ["All", ...new Set(deals.map((d) => d.city))];

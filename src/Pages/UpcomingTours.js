@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/CarRentalPage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaStar, FaUsers, FaMapMarkerAlt, FaClock, FaCalendarAlt } from "react-icons/fa";
+import { FaStar, FaUsers, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Fade,Zoom } from "react-awesome-reveal";

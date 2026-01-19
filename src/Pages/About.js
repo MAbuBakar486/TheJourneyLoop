@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../Styles/About.css';  // using SCSS (you can convert to CSS) 
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 import Car1 from "../Assets/car1.png";
 import { Helmet } from "react-helmet-async";
-import classNames from 'classnames';
+// import classNames from 'classnames';
 import { Fade } from "react-awesome-reveal";
-import { Link } from 'react-router-dom';
-import { Slide, Zoom } from 'react-awesome-reveal';
+// import { Link } from 'react-router-dom';
+import {Zoom } from 'react-awesome-reveal';
 
 // const stats = [
 //   { value: 100, suffix: '+', label: 'Premium Vehicles' },

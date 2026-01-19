@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/Footer.css";
 import Footerlogo from "../Assets/Flogo1.png";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import { FaApple, FaGooglePlay } from 'react-icons/fa';
+// import { FaApple, FaGooglePlay } from 'react-icons/fa';
 // import { FaHeart, FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -61,14 +61,14 @@ const Footer = () => {
             </button>
           </Col>
           <Col md={6} className="text-md-end text-center">
-            <a href="https://apps.apple.com/" target="_blank">
+            <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer">
               <img
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
               alt="App Store"
               className="store-badge"
             />
             </a>
-            <a href="https://play.google.com/" target="_blank">
+            <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer">
               <img
               src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
               alt="Google Play"

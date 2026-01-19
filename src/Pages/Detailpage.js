@@ -1,4 +1,4 @@
-// // TourDetail.jsx
+/// TourDetail.jsx
 // import React, { useState } from 'react';
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "../Styles/TourDetail.css";
@@ -355,7 +355,7 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import "../Styles/TourDetail.css";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { Container, Row, Col, Button, Card, Spinner } from "react-bootstrap";
@@ -431,7 +431,7 @@ const TourDetail = () => {
   const toggleQuestion = (idq) => setOpenQuestion(openQuestion === idq ? null : idq);
 
   // Share UI
-  const [showShare, setShowShare] = useState(false);
+  // const [showShare, setShowShare] = useState(false);
   const currentUrl = typeof window !== "undefined" ? window.location.href : "";
   const shareOptions = [
     {

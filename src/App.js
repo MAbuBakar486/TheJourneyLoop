@@ -1,6 +1,6 @@
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "react-hot-toast";
-import Cursor from './Widgets/Cursor.js';
+// import Cursor from './Widgets/Cursor.js';
 import ScrollToTop from '../src/Widgets/Scroll.js';
 import Navbar from './Components/Header.js';
 import Footer from './Components/Footer.js';

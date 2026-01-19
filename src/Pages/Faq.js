@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../Styles/Faq.css";
 import { Fade } from "react-awesome-reveal";
 import { motion } from "framer-motion";
-import { Slide, Zoom } from 'react-awesome-reveal';
+import { Zoom } from 'react-awesome-reveal';
 import { Helmet } from "react-helmet-async";
 import { FaQuestion } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';

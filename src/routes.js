@@ -19,7 +19,7 @@ import Contact from './Pages/Contact.js';
 import Success from './Pages/Success.js';
 // import Success from './Pages/Success.js';
 import NotFound from './Pages/NotFound.js';
-import Maintainance from './Pages/Maintainance.js';
+// import Maintainance from './Pages/Maintainance.js';
 
 import PrivacyPolicy from './Pages/PrivacyPolicy.js';
 import Terms from './Pages/Terms.js';
